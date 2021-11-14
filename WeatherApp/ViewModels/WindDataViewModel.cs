@@ -13,6 +13,9 @@ namespace WeatherApp.ViewModels
         public double KPHtoMPS(double kph) => kph * 1.0 / 36.0;
         public double MPStoKPH(double mps) => mps * 3.6;
         
-
+        public WindDataModel()
+        {
+            
+        }
     }
 }
