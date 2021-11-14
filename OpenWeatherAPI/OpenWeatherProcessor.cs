@@ -55,6 +55,11 @@ namespace OpenWeatherAPI
                 throw new ArgumentException("The key is null or empty!");
             }
 
+            if (ApiHelper.ApiClient == null)
+            {
+                throw new ArgumentException("The HTTP client is not initialized!");
+            }
+
             EndPoint = $"/onecall?";
 
             /// Src : https://stackoverflow.com/a/14517976/503842
